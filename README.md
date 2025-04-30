@@ -34,3 +34,34 @@ The system detects **four toxicity levels** (`None`, `Mild`, `High`, `Max`) and 
 ```bash
 pip install torch transformers streamlit openai python-docx python-dotenv pymupdf
 
+## 🧪 Usage Instructions
+
+### Option 1: Upload a File
+
+1. Click **"Upload a PDF or DOCX file"**
+2. Choose a document in one of the supported languages
+
+### Option 2: Paste Text
+
+1. Use the **text input** field to enter a paragraph or article
+
+### Step 3: Choose Detection Mode
+
+- **Direction A** – 4-class classification with review models for:
+  - Mild → High
+  - High → Max
+- **Direction B** – 3-class classification based on human-labeled data
+
+### Step 4: Run Analysis
+
+Click the **Analyze** button to start detection.
+
+**Output includes:**
+- Final **Toxicity Level**: `None`, `Mild`, `High`, `Max`
+- **Scaled Score**: 0–10
+- ⭐ **Star Rating**
+- 🧠 **GPT-4 Content Analysis** across:
+  - Bias
+  - Xenophobia
+  - Cultural Superiority
+  - Misinformation
